@@ -1,8 +1,8 @@
 all: build run
 
 build:
-	mpicc -o main2.o main2.c
+	mpicc -o main.o main.c
 run:
-	mpirun --hostfile hostfile2 -np 2 main2.o  
+	mpirun -np 10  main.o
 clean:
 	rm *.o
